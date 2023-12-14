@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 60px;
     flex-wrap: wrap;
+}
+@media(max-width:650px){
+    .bandeiras{
+        align-items: top;
+    }
 }
