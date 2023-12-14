@@ -47,7 +47,7 @@
 }
 @media (max-width: 650px) {
   .app {
-    border-radius: 25px;
+    border-radius: 10px;
   }
   .app-topicos {
     grid-template-columns: 1fr;
