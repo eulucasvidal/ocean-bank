@@ -1,0 +1,28 @@
+.introducao-bg1 {
+  background: var(--cor-3);
+}
+.introducao {
+  background: url(../../img/background/background-1.png);
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  color: var(--cor-p1);
+}
+.introducao-conteudo {
+  display: grid;
+  gap: 20px;
+  margin-top: 100px;
+
+}
+@media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

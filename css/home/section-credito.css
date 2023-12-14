@@ -1,0 +1,29 @@
+.creditos-bg{
+    background: var(--cor-4);
+}
+.creditos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.creditos-destaque{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.creditos-conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:50px;
+}
+
+@media(max-width:1000px){
+    .creditos{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .creditos-destaque{
+        justify-items: center;
+    }
+}

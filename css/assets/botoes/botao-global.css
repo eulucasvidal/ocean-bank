@@ -1,0 +1,33 @@
+.btn-global {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: var(--cor-p1);
+  z-index: 1;
+  background: var(--cor-2);
+  position: relative;
+  transition: all 250ms;
+  overflow: hidden;
+  font: 500 1rem/1.2 'Inter', sans-serif;
+  border: 2px solid transparent;
+  cursor: pointer;
+  width: max-content;
+}
+.btn-global::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background: linear-gradient(to right, #1f55b2 0%, #172d52 100%);
+  z-index: -1;
+  transition: all 250ms;
+}
+.btn-global:hover{
+    border-color: var(--cor-1);
+}
+.btn-global:hover::before {
+  width: 100%;
+}
