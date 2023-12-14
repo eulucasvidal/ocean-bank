@@ -16,6 +16,7 @@
 
 /*Home*/
 @import './home/section-introducao.css';
+@import './home/section-bandeiras.css';
 @import './home/section-app.css';
 @import './home/section-credito.css';
 @import './home/section-rendimentos.css';

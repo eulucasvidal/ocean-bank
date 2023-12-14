@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-ul{
+ul,li{
     padding: 0px;
     list-style: none;
 }
