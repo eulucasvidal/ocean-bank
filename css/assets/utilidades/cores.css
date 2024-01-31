@@ -8,6 +8,7 @@
     --cor-2:#174B9F;
     --cor-3:#051531;
     --cor-4:#F6FAFF;
+    --cor-5:#18315B;
     
     --gradient:linear-gradient(to bottom,#ADCFEA,#72B5EB,#2993EA);
 }
@@ -35,4 +36,7 @@
 }
 .cor-4{
     color: var(--cor-4);
+}
+.cor-5{
+    color: var(--cor-5);
 }
