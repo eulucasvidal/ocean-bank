@@ -25,3 +25,6 @@ img{
     display: block;
     height: auto;
 }
+button{
+    text-decoration: none;
+}
