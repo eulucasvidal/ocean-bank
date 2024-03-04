@@ -14,10 +14,9 @@
   padding: 60px;
 }
 .app-mockups {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 .app-conteudo {
   display: grid;

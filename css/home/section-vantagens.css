@@ -2,7 +2,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
 }
 .vantagens-item-left{
   display: grid;
@@ -24,6 +24,7 @@
   align-items: center;
   gap: 20px;
 }
+
   .vantagens-item-right div{
   grid-column: 1;
   grid-row: 1;
