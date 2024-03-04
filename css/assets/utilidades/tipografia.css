@@ -35,8 +35,12 @@
 .font-1-exl{
   font: 300 4.5rem/1.1 'M PLUS 1', sans-serif;
 }
-.font-2-xs{
+.font-2-xs,
+.font-2-xs-b{
   font:300 0.8rem/1.2rem 'Red Hat Display', sans-serif;
+}
+.font-2-xs-b{
+  font-weight: 600;
 }
 .font-2-s{
   font:300 1rem/1.2rem 'Red Hat Display', sans-serif;

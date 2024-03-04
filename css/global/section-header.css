@@ -27,12 +27,30 @@
 .header-menu a {
   padding: 8px 14px;
   border-bottom: 1px solid transparent;
+  color: var(--cor-p1);
 }
 .header-menu a:hover {
   border-bottom: 1px solid var(--cor-1);
   transition: 0.8s;
 }
-
+.dropdown-menu{
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--cor-4);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+}
+.dropdown-menu-item{
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.dropdown:hover .dropdown-menu{
+  display: flex;
+  border: 1px solid var(--cor-1);
+}
 @media (max-width: 1000px) {
   .header {
     display: flex;

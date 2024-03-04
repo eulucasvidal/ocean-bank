@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;300;400;500&display=swap" rel="stylesheet" />
@@ -22,6 +21,7 @@
     document.documentElement.className += " js";
   </script>
   <link rel="preload" href="./css/style.css" as="style" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -33,9 +33,71 @@
       <nav data-menu="suave" class="header-container">
         <button data-menu="button"><span id="hamburguer"></span></button>
         <ul data-menu="itens" class="header-menu font-1-s">
-          <li><a href="#">Produtos</a></li>
+          <li class="dropdown">
+            <a href="#">Produtos</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-item">
+                <div>
+                  <img src="./img/icones/credit.svg" alt="">
+                </div>
+                <div class="cor-p4 font-2-xs">
+                  <span class="font-2-xs-b">Lorem ipsumasasasasasas dolor sit</span>
+                  <p>amet consectetur</p>
+                </div>
+              </div>
+              <div class="dropdown-menu-item">
+                <div>
+                  <img src="./img/icones/invest.svg" alt="">
+                </div>
+                <div class="cor-p4 font-2-xs">
+                  <span class="font-2-xs-b">Lorem ipsumasasasasasas dolor sit</span>
+                  <p>amet consectetur</p>
+                </div>
+              </div>
+              <div class="dropdown-menu-item">
+                <div>
+                  <img src="./img/icones/taxas.svg" alt="">
+                </div>
+                <div class="cor-p4 font-2-xs">
+                  <span class="font-2-xs-b">Lorem ipsumasasasasasas dolor sit</span>
+                  <p>amet consectetur</p>
+                </div>
+              </div>
+              <div class="dropdown-menu-item">
+                <div>
+                  <img src="./img/icones/people.svg" alt="">
+                </div>
+                <div class="cor-p4 font-2-xs">
+                  <span class="font-2-xs-b">Lorem ipsumasasasasasas dolor sit</span>
+                  <p>amet consectetur</p>
+                </div>
+              </div>
+            </div>
+          </li>
           <li><a href="#">Negocios</a></li>
-          <li><a href="#">Nosso App</a></li>
+          <li class="dropdown">
+            <a href="#">Nosso App</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-item">
+                <div>
+                  <img src="./img/icones/apple.svg" alt="">
+                </div>
+                <div class="cor-p4 font-2-xs">
+                  <span class="font-2-xs-b">Lorem ipsumasasasasasas dolor sit</span>
+                  <p>amet consectetur</p>
+                </div>
+              </div>
+              <div class="dropdown-menu-item">
+                <div>
+                  <img src="./img/icones/playstore.svg" alt="">
+                </div>
+                <div class="cor-p4 font-2-xs">
+                  <span class="font-2-xs-b">Lorem ipsumasasasasasas dolor sit</span>
+                  <p>amet consectetur</p>
+                </div>
+              </div>
+            </div>
+          </li>
           <li><a href="#">Contato</a></li>
         </ul>
         <a href="#"><button class="btn-global">Junte-se a nós</button></a>
@@ -46,7 +108,7 @@
     <article class="introducao-bg1">
       <section class="introducao container">
         <div>
-          <div class="introducao-conteudo">
+          <div class="introducao-conteudo" data-anime="up">
             <span class="span-txt1">um novo banco</span>
             <h1 class="titulo-1">
               Bem-vindos ao Ocean Bank: Onde as Decisões são Suas...
@@ -69,13 +131,13 @@
             </div>
           </div>
         </div>
-        <div class="introducao-conteudo">
+        <div class="introducao-conteudo" data-anime="up">
           <img src="./img/img-destaque/cartoes.png" alt="imagem de cartoes" />
         </div>
       </section>
     </article>
     <article class="bandeiras-bg">
-      <section class="container">
+      <section class="container" data-anime="left">
         <ul class="bandeiras">
           <li><img src="./img/bandeiras-pagamento/paypal.svg" alt="" /></li>
           <li>
@@ -96,37 +158,37 @@
     </article>
     <article class="produtos-bg">
       <section class="container produtos">
-        <div class="produtos-item">
-          <img src="./img/produtos/cartao.png" alt="" />
+        <div class="produtos-item" data-anime="left">
+          <img src="./img/produtos/cartao.png" alt="cartao black"/>
           <h4 class="font-1-sb">Ocean Unlimited</h4>
           <p class="font-1-xs">
             Solicite já e desfrute de um universo de possibilidades sem fronteiras..
           </p>
         </div>
-        <div class="produtos-item">
-          <img src="./img/produtos/mobile.png" alt="" />
+        <div class="produtos-item" data-anime="left">
+          <img src="./img/produtos/mobile.png" alt="celular mobile"/>
           <h4 class="font-1-sb">Investindo com Inteligência</h4>
           <p class="font-1-xs">
             Cada escolha é uma estratégia, cada movimento é uma conquista. Aprenda a trilhar o caminho do sucesso financeiro.
           </p>
         </div>
-        <div class="produtos-item">
-          <img src="./img/produtos/equipe.png" alt="" />
+        <div class="produtos-item" data-anime="left">
+          <img src="./img/produtos/equipe.png" alt="imagem equipe"/>
           <h4 class="font-1-sb">Excelência Analítica</h4>
           <p class="font-1-xs">
             Transformando Desafios em Oportunidades com Nossa Equipe de Especialistas.
           </p>
         </div>
-        <div class="produtos-item">
-          <img src="./img/produtos/plantando-moedas.png" alt="" />
+        <div class="produtos-item" data-anime="left">
+          <img src="./img/produtos/plantando-moedas.png" alt="imagem moedas"/>
           <h4 class="font-1-sb">Cultivando Prosperidade</h4>
           <p class="font-1-xs">Semeando o Sucesso Financeiro em Cada Investimento.</p>
         </div>
       </section>
     </article>
     <article class="app-bg">
-      <section class="app container">
-        <div class="app-mockups">
+      <section class="app container"  data-anime="up">
+        <div class="app-mockups"  data-anime="left">
           <div>
             <img src="./img/img-destaque/app.png" alt="Imagem mockups de celular" />
           </div>
@@ -140,29 +202,29 @@
               </button></a>
           </div>
         </div>
-        <div class="app-conteudo">
+        <div class="app-conteudo"  data-anime="right">
           <span class="span-txt1">feito pensando em você</span>
           <h2 class="titulo-2">
             Tudo o que você precisa na palma de sua mão
           </h2>
           <div class="app-topicos">
-            <div class="app-topicos-txt">
-              <img src="./img/icones/people.svg" alt="icone de pessoa" />
+            <div class="app-topicos-txt" data-anime="right">
+              <img src="./img/icones/people.svg" alt="icone de pessoa"/>
               <h3 class="font-1-sb">Controle sua conta</h3>
               <p class="font-1-xs">
                 Acompanhar sua conta, fazer transferências e pagamentos de
                 onde estiver.
               </p>
             </div>
-            <div class="app-topicos-txt">
-              <img src="./img/icones/credit.svg" alt="icone de cartao" />
+            <div class="app-topicos-txt" data-anime="right">
+              <img src="./img/icones/credit.svg" alt="icone de cartao"/>
               <h3 class="font-1-sb">Cartão virtual</h3>
               <p class="font-1-xs">
                 Acompanhe a fatura do seu cartão de crédito e faça compras
                 online com seu cartão virtual.
               </p>
             </div>
-            <div class="app-topicos-txt">
+            <div class="app-topicos-txt" data-anime="right">
               <img src="./img/icones/invest.svg" alt="icone de investimento" />
               <h3 class="font-1-sb">Investimentos</h3>
               <p class="font-1-xs">
@@ -170,7 +232,7 @@
                 investidor.
               </p>
             </div>
-            <div class="app-topicos-txt">
+            <div class="app-topicos-txt" data-anime="right">
               <img src="./img/icones/taxas.svg" alt="icone de taxas" />
               <h3 class="font-1-sb">Sem taxas</h3>
               <p class="font-1-xs">
@@ -184,19 +246,19 @@
     </article>
     <article class="creditos-bg">
       <section class="creditos container">
-        <div class="creditos-destaque">
+        <div class="creditos-destaque" data-anime="up">
           <h2 class="titulo-2">Faça mais com seu cartão de crédito</h2>
           <img src="./img/img-destaque/pessoa-bancaria.png" alt="imagem de pessoa" />
         </div>
         <div class="creditos-conteudo">
-          <div>
+          <div data-anime="up">
             <h3 class="font-1-mb">Pix no crédito</h3>
             <p class="font-1-s">
               Faça pagamentos PIX utilizando seu cartão de crédito. Parcele e
               aproveite essa vantagem.
             </p>
           </div>
-          <div>
+          <div data-anime="up">
             <h3 class="font-1-mb">
               Pagamento de Boleto com cartão de crédito
             </h3>
@@ -204,7 +266,7 @@
               Pague seus boletos no crédito e parcele em até 12 vezes.
             </p>
           </div>
-          <div>
+          <div data-anime="up">
             <h3 class="font-1-mb">Parcelamento de Compras</h3>
             <p class="font-1-s">
               Comprou e a loja não parcelou? O Ocean Bank parcela a compra
@@ -217,29 +279,29 @@
     <article>
       <section class="container vantagens">
         <h2 class="font-1-xlb">Entenda nossas vantagens</h2>
-        <div class="vantagens-item-left">
-          <img src="./img/img-destaque/criptomoedas.png" alt="">
+        <div class="vantagens-item-left" data-anime="left">
+          <img src="./img/img-destaque/criptomoedas.png" alt="imagem criptomoedas">
           <div>
             <h3 class="font-1-lb">Maximize Seus Ganhos</h3>
             <p class="font-1-s">Maximize seus ganhos explorando o potencial das criptomoedas conosco! Oferecemos diversidade de opções, conexão a projetos inovadores e suporte especializado para uma experiência acessível e lucrativa. Escolha-nos para embarcar em uma jornada financeira emocionante.</p>
           </div>
         </div>
-        <div class="vantagens-item-right">
-          <img src="./img/img-destaque/noticias.png" alt="">
+        <div class="vantagens-item-right" data-anime="right">
+          <img src="./img/img-destaque/noticias.png" alt="imagem noticias">
           <div>
             <h3 class="font-1-lb">Desvendando o Cenário Financeiro: Insights e Tendências para Potencializar seus Investimentos</h3>
             <p class="font-1-s">Potencialize seus investimentos com insights do mercado financeiro. Oferecemos análises atuais e tendências para embasar suas decisões, permitindo que esteja sempre um passo à frente nas suas estratégias.</p>
           </div>
         </div>
-        <div class="vantagens-item-left">
-          <img src="./img/img-destaque/equipe.png" alt="">
+        <div class="vantagens-item-left" data-anime="left">
+          <img src="./img/img-destaque/equipe.png" alt="imagem equipe">
           <div>
             <h3 class="font-1-lb">Equipe Experiente: Orientando seus Investimentos com Confiança e Precisão.</h3>
             <p class="font-1-s">Nossa equipe experiente está comprometida em guiar seus investimentos com confiança e precisão. Conte conosco para proporcionar uma orientação sólida e qualificada em suas decisões financeiras.</p>
           </div>
         </div>
-        <div class="vantagens-item-right">
-          <img src="./img/img-destaque/graficos.png" alt="">
+        <div class="vantagens-item-right" data-anime="right">
+          <img src="./img/img-destaque/graficos.png" alt="imagem graficos">
           <div>
             <h3 class="font-1-lb">Desbravando o Mundo Financeiro: Estratégias e Oportunidades para o Seu Sucesso</h3>
             <p class="font-1-s">Com estratégias personalizadas e suporte contínuo, estamos comprometidos em guiar você rumo ao sucesso financeiro, fornecendo as ferramentas essenciais para decisões informadas e resultados sólidos.</p>
@@ -251,27 +313,27 @@
       <div class="perguntas container">
         <h4 class="font-1-xl">perguntas frequentes</h4>
         <dl>
-          <div>
+          <div data-anime="up">
             <dt><button class="font-1-sb cor-p4" aria-controls="pergunta1" aria-expanded="true">Como posso recuperar minha senha de acesso ao internet banking?</button></dt>
             <dd id="pergunta1" class="font-1-s ativo">Para recuperar sua senha, clique em "Esqueci minha senha" na página de login. Você receberá instruções por e-mail ou SMS para redefinir sua senha com segurança.</dd>
           </div>
-          <div>
+          <div data-anime="up">
             <dt><button class="font-1-sb cor-p4" aria-controls="pergunta2" aria-expanded="false">Qual é o limite diário para transferências online?</button></dt>
             <dd id="pergunta2" class="font-1-s">O limite diário para transferências online varia conforme o tipo de conta. Consulte a seção de limites no internet banking ou entre em contato com nosso suporte para obter informações específicas sobre sua conta.</dd>
           </div>
-          <div>
+          <div data-anime="up">
             <dt><button class="font-1-sb cor-p4" aria-controls="pergunta3" aria-expanded="false">Como posso cadastrar contas de favorecidos para transferências frequentes?</button></dt>
             <dd id="pergunta3" class="font-1-s">No internet banking, vá para a seção de "Transferências" e escolha a opção "Cadastrar Favorecido". Preencha os detalhes da conta e salve para facilitar transferências futuras de maneira rápida e segura.</dd>
           </div>
-          <div>
+          <div data-anime="up">
             <dt><button class="font-1-sb cor-p4" aria-controls="pergunta4" aria-expanded="false">Quais medidas de segurança o banco adota para proteger minhas transações online?</button></dt>
             <dd id="pergunta4" class="font-1-s">Nosso banco utiliza tecnologias avançadas de criptografia e autenticação para garantir a segurança das suas transações online. Além disso, recomendamos o uso de senhas fortes, atualização regular de dispositivos e a não compartilhar informações confidenciais. Para mais detalhes, consulte nossa página de segurança</dd>
           </div>
-          <div>
+          <div data-anime="up">
             <dt><button class="font-1-sb cor-p4" aria-controls="pergunta5" aria-expanded="false"> Como faço para ativar as notificações de transações no aplicativo?</button></dt>
             <dd id="pergunta5" class="font-1-s">No menu de configurações do aplicativo, você geralmente encontrará a opção de ativar notificações. Basta habilitar essa função para receber alertas sobre transações realizadas na sua conta.</dd>
           </div>
-          <div>
+          <div data-anime="up">
             <dt><button class="font-1-sb cor-p4" aria-controls="pergunta6" aria-expanded="false"> É possível realizar transferências pelo aplicativo?</button></dt>
             <dd id="pergunta6" class="font-1-s"> Sim, a maioria dos aplicativos bancários permite que você faça transferências entre contas, tanto para contas do mesmo banco quanto para contas de outras instituições.</dd>
           </div>
@@ -292,7 +354,7 @@
       </section>
     </aside>
   </main>
-  <footer id="contato" class="footer-bg">
+  <footer id="contato" class="footer-bg"data-anime="up">
     <section class="container footer">
       <div class="footer-conteudo">
         <div class="footer-itens">
