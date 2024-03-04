@@ -25,14 +25,14 @@
 .introducao-img :nth-child(1){
   grid-column: 1;
   grid-row: 1;
-  animation: floatCardBlue 5s ease-in-out infinite;
+  animation: floatCardBlue 3s ease-in-out infinite;
 }
 .introducao-img :nth-child(2){
   grid-column: 1;
   grid-row: 1;
   top: 50px;
   right: 50px;
-  animation: floatCardBlack 5s ease-in-out infinite;
+  animation: floatCardBlack 3s ease-in-out infinite;
 }
 
 @keyframes floatCardBlue{
@@ -69,5 +69,8 @@
     gap: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .introducao-img{
+    padding: 20px;
   }
 }
