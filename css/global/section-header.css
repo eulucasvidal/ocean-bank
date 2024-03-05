@@ -41,6 +41,8 @@
   border-radius: 10px;
   padding: 20px;
   position: absolute;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .dropdown-menu div > p{
   max-width: 35ch;
@@ -52,7 +54,7 @@
 }
 .dropdown:hover .dropdown-menu{
   display: flex;
-  border: 1px solid var(--cor-1);
+  border: 2px solid var(--cor-1);
 }
 @media (max-width: 1000px) {
   .header {
