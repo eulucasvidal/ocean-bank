@@ -42,6 +42,9 @@
   padding: 20px;
   position: absolute;
 }
+.dropdown-menu div > p{
+  max-width: 35ch;
+}
 .dropdown-menu-item{
   display: flex;
   gap: 10px;
