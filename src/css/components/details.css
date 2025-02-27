@@ -1,0 +1,42 @@
+i{
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .4s;
+}
+.fa-circle-check{
+  color: #3E97E0;
+}
+.fa-money-bills{
+  color: #509963;
+}
+.fa-chart-pie{
+  color: #398BCE;
+}
+.fa-credit-card{
+  color: #B48F28;
+}
+.fa-facebook-f,
+.fa-behance,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-dribbble
+{
+  text-align: center;
+  border-radius: 50%;
+  padding: 15px;
+  color: #0866FF;
+}
+.fa-facebook-f:hover,
+.fa-behance:hover,
+.fa-linkedin-in:hover{
+  background-color: #0866FF;
+  color: #FFFFFF;
+}
+.fa-instagram:hover{
+  background: linear-gradient(to right, #5C5BA5 0%,#CA3F74 50%, #FABD5A 100%);
+  color: #FFFFFF;
+}
+.fa-dribbble:hover{
+  background-color: #FFAAE7;
+  color: #B7539B;
+}

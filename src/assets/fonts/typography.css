@@ -1,0 +1,29 @@
+.title{
+  font: 500 5rem/1 "Inter", serif;
+  text-transform: uppercase;
+}
+.subtitle{
+  font: 500 2.7rem/1 "Inter", serif;
+  text-transform: capitalize;
+}
+.links{
+  font: 600 0.875rem/1 "Inter", serif;
+  text-transform: uppercase;
+}
+.span-title{
+  font: 500 1rem/1.2 "Inter", serif;
+  text-transform: uppercase;
+  color: var(--cor-p1);
+  width: max-content;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.span-text{
+  font: 500 1rem/1.2 "Inter", serif;
+  text-transform: capitalize;
+}
+.paragraph{
+  font: 300 1rem/1.1 "Inter", serif;
+}

@@ -1,405 +1,332 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ocean Bank | Invista conosco</title>
-  <link rel="shortcut icon" href="./img/logotipo/favicon-32x32.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;300;400;500&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ff7cccf4ba.js" crossorigin="anonymous"></script>
   <script>document.documentElement.className += " js";</script>
-  <link rel="preload" href="./css/style.css" as="style" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="./src/css/global.css" as="style" />
+  <link rel="stylesheet" href="./src/css/global.css" />
 </head>
+
 <body>
   <header class="header-bg">
-    <div class="header container">
-      <div>
-        <img src="./img/logotipo/logotipo-1.svg" alt="imagem logotipo primario" />
+    <div class="container">
+      <div class="header">
+        <div>
+          <a href="#" aria-label="Link para navegação interna">
+            <img src="./src/assets/images/desktop/icons/logos/logo-main.svg" alt="imagem logotipo primario">
+          </a>
+        </div>
+        <nav data-menu="suave" class="header-nav">
+          <button data-menu="button"><span id="hamburguer"></button>
+          <ul data-menu="itens" class="header-menu links">
+            <li><a href="#home" aria-label="Link home de navegação interna">home</a></li>
+            <li><a href="#sobrenos" aria-label="Link sobre nós de navegação interna">sobre nós</a></li>
+            <li><a href="#vantagens" aria-label="Link vantagens de navegação interna">vantagens</a></li>
+            <li><a href="#aplicatico" aria-label="Link aplicativo de navegação interna">aplicativo mobile</a></li>
+          </ul>
+          <a href="#">
+            <button class="btn-global">inscreva-se</button>
+          </a>
+        </nav>
       </div>
-      <nav data-menu="suave" class="header-container">
-        <button data-menu="button"><span id="hamburguer"></span></button>
-        <ul data-menu="itens" class="header-menu font-1-s">
-          <li class="dropdown">
-            <a href="#">Produtos</a>
-            <div class="dropdown-menu">
-              <div class="dropdown-menu-item">
-                <div>
-                  <img src="./img/icones/credit.svg" alt="icone de credito">
-                </div>
-                <div class="cor-p4 font-2-xs">
-                  <span class="font-2-xs-b">Cartão de Crédito</span>
-                  <p>Explore nossas opções de cartão de crédito e descubra benefícios."</p>
-                </div>
-              </div>
-              <div class="dropdown-menu-item">
-                <div>
-                  <img src="./img/icones/invest.svg" alt="icone de investimento">
-                </div>
-                <div class="cor-p4 font-2-xs">
-                  <span class="font-2-xs-b">Investimentos</span>
-                  <p>"Descubra oportunidades de investimento que se alinham aos seus objetivos financeiros."</p>
-                </div>
-              </div>
-              <div class="dropdown-menu-item">
-                <div>
-                  <img src="./img/icones/taxas.svg" alt="icone de taxas">
-                </div>
-                <div class="cor-p4 font-2-xs">
-                  <span class="font-2-xs-b">Preservação de Capital</span>
-                  <p>"Investimento focadas na preservação do seu capital, minimizando os riscos."</p>
-                </div>
-              </div>
-              <div class="dropdown-menu-item">
-                <div>
-                  <img src="./img/icones/people.svg" alt="icone de pessoa">
-                </div>
-                <div class="cor-p4 font-2-xs">
-                  <span class="font-2-xs-b">Equipe Especializada</span>
-                  <p>"Equipe de especialistas financeiros prontos para fornecer orientação personalizada e suporte contínuo."</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><a href="#">Negocios</a></li>
-          <li class="dropdown">
-            <a href="#">Nosso App</a>
-            <div class="dropdown-menu">
-              <div class="dropdown-menu-item">
-                <div>
-                  <img src="./img/icones/apple.svg" alt="icone de applestore">
-                </div>
-                <div class="cor-p4 font-2-xs">
-                  <span class="font-2-xs-b">AppleStore</span>
-                  <p>"Acesse nosso aplicativo exclusivo na App Store para uma experiência aprimorada."</p>
-                </div>
-              </div>
-              <div class="dropdown-menu-item">
-                <div>
-                  <img src="./img/icones/playstore.svg" alt="icone de playstore">
-                </div>
-                <div class="cor-p4 font-2-xs">
-                  <span class="font-2-xs-b">PlayStore</span>
-                  <p>"Acesse nosso aplicativo exclusivo na PlayStore para uma experiência aprimorada."</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-        <a href="#"><button class="btn-global">Junte-se a nós</button></a>
-      </nav>
     </div>
   </header>
   <main>
-    <article class="introducao-bg1">
-      <section class="introducao container">
-        <div>
-          <div class="introducao-conteudo" data-anime="up">
-            <span class="span-txt1">um novo banco</span>
-            <h1 class="titulo-1">
-              Bem-vindos ao Ocean Bank: Onde as Decisões são Suas...
-            </h1>
-            <p class="font-2-s">
-              A plataforma da OB tem investimentos de, CDB 400% e CDB 130% do
-              CDI: indique amigos para investir no Ocean Bank e ganhe CDBs
-              exclusivos.
-            </p>
-            <a href="#"><button class="btn-global">Abra sua conta</button></a>
+    <section class="intro-bg">
+      <article class="container">
+        <div class="intro">
+          <div>
+            <div class="intro-content" data-anime="up">
+              <span class="span-title">um novo banco</span>
+              <h1 class="title">
+                o banco feito para você
+              </h1>
+              <p class="paragraph">
+                A plataforma da OB tem investimentos de, CDB 400% e CDB 130% do
+                CDI: indique amigos para investir no Ocean Bank e ganhe CDBs
+                exclusivos.
+              </p>
+              <a href="#"><button class="button">Abra sua conta</button></a>
+            </div>
+          </div>
+          <div class="intro-img" data-anime="up">
+            <img src="./src/assets/images/desktop/cards/card-1.png" alt="imagem de cartoes" />
+            <img src="./src/assets/images/desktop/cards/card-2.png" alt="imagem de cartoes" />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="app-bg">
+      <article class="container">
+        <div class="app" data-anime="up">
+          <div data-anime="left">
+            <img src="./src/assets/images/desktop/highlights/app.png" alt="Imagem mockups de celular" />
+          </div>
+          <div class="app-conteudo" data-anime="right">
+            <span class="span-title">feito pensando em você</span>
+            <h1 class="subtitle">Tudo o que você precisa na palma de sua mão</h1>
+            <p class="paragraph">Ganhe juros sobre seu dinheiro. O celular rapidamente se tornou um canal importante para os bancos, à medida que os consumidores se sentem mais conforto utilizando seus dispositivos móveis para uma ampla gama de serviços financeiros</p>
+            <p class="paragraph">A atualização do aplicativo bancário Sight abordou muitas das questões levantadas no relatório, ressaltando como ele tornou o celular uma prioridade máxima. Sua jornada é perfeita, segura e protegida. Não há necessidade de inserir detalhes do cartão. Você pode pagar on-line a qualquer hora, de qualquer dispositivo. O número crescente de cheques depositados a cada dia usando um telefone celular reflete a satisfação do cliente com a opção móvel.</p>
+            <div class="app-list">
+              <ul>
+                <li class="list-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="span-text">Transações Digitais</span>
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="span-text">Transações Digitais</span>
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="span-text">Transações Digitais</span>
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="span-text">Transações Digitais</span>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="span-text">Transações Digitais</span>
+                </li>
+                <li class="list-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="span-text">Transações Digitais</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-global">Baixe nosso app</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="flags-bg">
+      <article class="container">
+        <div class="flags">
+          <div class="flags-slide">
+            <img src="./src/assets/images/desktop/icons/flags/paypal.svg" alt="icone paypal" />
+            <img src="./src/assets/images/desktop/icons/flags/apple-pay.svg" alt="icone apple pay" />
+            <img src="./src/assets/images/desktop/icons/flags/visa.svg" alt="icone visa card" />
+            <img src="./src/assets/images/desktop/icons/flags/mastercard.svg" alt="icone mastercard" />
+            <img src="./src/assets/images/desktop/icons/flags/bitcoin.svg" alt="icone bitcoin" />
+            <img src="src/assets/images/desktop/icons/flags/american-express.svg" alt="icone american-express" />
+            <img src="./src/assets/images/desktop/icons/flags/google-pay.svg" alt="icone google-pay" />
+          </div>
+          <div class="flags-slide">
+            <img src="./src/assets/images/desktop/icons/flags/paypal.svg" alt="icone paypal" />
+            <img src="./src/assets/images/desktop/icons/flags/apple-pay.svg" alt="icone apple pay" />
+            <img src="./src/assets/images/desktop/icons/flags/visa.svg" alt="icone visa card" />
+            <img src="./src/assets/images/desktop/icons/flags/mastercard.svg" alt="icone mastercard" />
+            <img src="./src/assets/images/desktop/icons/flags/bitcoin.svg" alt="icone bitcoin" />
+            <img src="src/assets/images/desktop/icons/flags/american-express.svg" alt="icone american-express" />
+            <img src="./src/assets/images/desktop/icons/flags/google-pay.svg" alt="icone google-pay" />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="services-bg">
+      <article class="container">
+        <div class="services">
+          <div class="services-text">
+            <h1 class="subtitle">profissional comunicação</h1>
+            <p class="paragraph">O celular rapidamente se tornou um canal importante para os bancos, à medida que os consumidores se sentem mais confortáveis utilizando seus dispositivos móveis para uma ampla gama de serviços financeiros</p>
+          </div>
+          <div>
+            <img src="./src/assets/images/desktop/highlights/Rectangle 2009.png" alt="">
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="advantage-bg">
+      <article class="container">
+        <div class="advantage">
+          <div class="advantage-container">
+            <div class="advantage-text">
+              <h1 class="subtitle">o que nos torna melhores do que os concorrentes?</h1>
+              <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit numquam eos magni adipisci quae placeat, excepturi repellat fugiat ullam dolorem nesciunt repellendus est iure illo illum, dolorum, vero vel nihil?</p>
+              <a href="#">
+                <button class="btn-global">entre em contato</button>
+              </a>
+            </div>
+            <div class="advantage-content">
+              <div>
+                  <div class="advantage-item">
+                    <h1 class="subtitle">3200</h1>
+                    <p class="paragraph">Transações por minuto</p>
+                  </div>
+                  <div class="advantage-item-effect-1"></div>
+              </div>
+              <div>
+                  <div class="advantage-item-effect-2"></div>
+                  <div class="advantage-item">
+                    <h1 class="subtitle">4.348</h1>
+                    <p class="paragraph">As pessoas confiam em nós</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantage-container">
             <div>
-              <p class="font-2-xs">
-                Confira condições e regulamento
-                <span class="link">clicando aqui.</span>
-              </p>
-              <p class="font-2-xs">
-                Rendimento com relação ao CDI Bruto – Emissor Ocean Bank e
-                carência de 1 dia.
-              </p>
+              <img src="./src/assets/images/desktop/highlights/metricas.png" alt="">
+            </div>
+            <div class="advantage-text">
+              <h1 class="subtitle">o que nos torna melhores do que os concorrentes?</h1>
+              <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit numquam eos magni adipisci quae placeat, excepturi repellat fugiat ullam dolorem nesciunt repellendus est iure illo illum, dolorum, vero vel nihil?</p>
+              <a href="#">
+                <button class="btn-global">entre em contato</button>
+              </a>
             </div>
           </div>
         </div>
-        <div class="introducao-img" data-anime="up">
-          <img src="./img/img-destaque/CARTAO-1.png" alt="imagem de cartoes" />
-          <img src="./img/img-destaque/CARTAO-2.png" alt="imagem de cartoes" />
-        </div>
-      </section>
-    </article>
-    <article class="bandeiras-bg">
-      <section class="container" data-anime="left">
-        <ul class="bandeiras">
-          <li><img src="./img/bandeiras-pagamento/paypal.svg" alt="icone paypal"/></li>
-          <li>
-            <img src="./img/bandeiras-pagamento/apple-pay.svg" alt="icone apple pay"/>
-          </li>
-          <li><img src="./img/bandeiras-pagamento/bitcoin.svg" alt="icone bitcoin"/></li>
-          <li>
-            <img src="./img/bandeiras-pagamento/mastercard.svg" alt="icone mastercard"/>
-          </li>
-          <li>
-            <img src="./img/bandeiras-pagamento/american-express.svg" alt="icone american-express"/>
-          </li>
-          <li>
-            <img src="./img/bandeiras-pagamento/google-pay.svg" alt="icone google-pay" />
-          </li>
-        </ul>
-      </section>
-    </article>
-    <article class="produtos-bg">
-      <section class="container produtos">
-        <div class="produtos-item" data-anime="left">
-          <img src="./img/produtos/cartao.png" alt="cartao black" />
-          <h4 class="font-1-sb">Ocean Unlimited</h4>
-          <p class="font-1-xs">
-            Solicite já e desfrute de um universo de possibilidades sem fronteiras..
-          </p>
-        </div>
-        <div class="produtos-item" data-anime="left">
-          <img src="./img/produtos/mobile.png" alt="celular mobile" />
-          <h4 class="font-1-sb">Investindo com Inteligência</h4>
-          <p class="font-1-xs">
-            Cada escolha é uma estratégia, cada movimento é uma conquista. Aprenda a trilhar o caminho do sucesso financeiro.
-          </p>
-        </div>
-        <div class="produtos-item" data-anime="left">
-          <img src="./img/produtos/equipe.png" alt="imagem equipe" />
-          <h4 class="font-1-sb">Excelência Analítica</h4>
-          <p class="font-1-xs">
-            Transformando Desafios em Oportunidades com Nossa Equipe de Especialistas.
-          </p>
-        </div>
-        <div class="produtos-item" data-anime="left">
-          <img src="./img/produtos/plantando-moedas.png" alt="imagem moedas" />
-          <h4 class="font-1-sb">Cultivando Prosperidade</h4>
-          <p class="font-1-xs">Semeando o Sucesso Financeiro em Cada Investimento.</p>
-        </div>
-      </section>
-    </article>
-    <article class="app-bg">
-      <section class="app container" data-anime="up">
-        <div class="app-mockups" data-anime="left">
-          <div>
-            <img src="./img/img-destaque/app.png" alt="Imagem mockups de celular" />
-          </div>
-          <div class="container-btn-app">
-            <a href="#"><button class="btn-app">
-                <img src="./img/icones/apple.svg" alt="Icone da Apple" />apple
-                store
-              </button></a>
-            <a href="#"><button class="btn-app">
-                <img src="./img/icones/playstore.svg" alt="Icone da PlayStore" />google play
-              </button></a>
-          </div>
-        </div>
-        <div class="app-conteudo" data-anime="right">
-          <span class="span-txt1">feito pensando em você</span>
-          <h2 class="titulo-2">
-            Tudo o que você precisa na palma de sua mão
-          </h2>
-          <div class="app-topicos">
-            <div class="app-topicos-txt" data-anime="right">
-              <img src="./img/icones/people.svg" alt="icone de pessoa" />
-              <h3 class="font-1-sb">Controle sua conta</h3>
-              <p class="font-1-xs">
-                Acompanhar sua conta, fazer transferências e pagamentos de
-                onde estiver.
-              </p>
+      </article>
+    </section>
+
+    <section class="perguntas-bg">
+      <article class="container">
+        <div class="perguntas">
+          <h1 class="subtitle">perguntas frequentes</h1>
+          <dl>
+            <div data-anime="up">
+              <dt><button class="paragraph cor-p4" aria-controls="pergunta1" aria-expanded="true">Como posso recuperar minha senha de acesso ao internet banking?</button></dt>
+              <dd id="pergunta1" class="paragraph">Para recuperar sua senha, clique em "Esqueci minha senha" na página de login. Você receberá instruções por e-mail ou SMS para redefinir sua senha com segurança.</dd>
             </div>
-            <div class="app-topicos-txt" data-anime="right">
-              <img src="./img/icones/credit.svg" alt="icone de cartao" />
-              <h3 class="font-1-sb">Cartão virtual</h3>
-              <p class="font-1-xs">
-                Acompanhe a fatura do seu cartão de crédito e faça compras
-                online com seu cartão virtual.
-              </p>
+            <div data-anime="up">
+              <dt><button class="paragraph cor-p4" aria-controls="pergunta2" aria-expanded="false">Qual é o limite diário para transferências online?</button></dt>
+              <dd id="pergunta2" class="paragraph">O limite diário para transferências online varia conforme o tipo de conta. Consulte a seção de limites no internet banking ou entre em contato com nosso suporte para obter informações específicas sobre sua conta.</dd>
             </div>
-            <div class="app-topicos-txt" data-anime="right">
-              <img src="./img/icones/invest.svg" alt="icone de investimento" />
-              <h3 class="font-1-sb">Investimentos</h3>
-              <p class="font-1-xs">
-                Diversas opções de investimentos, de acordo com seu perfil de
-                investidor.
-              </p>
+            <div data-anime="up">
+              <dt><button class="paragraph cor-p4" aria-controls="pergunta3" aria-expanded="false">Como posso cadastrar contas de favorecidos para transferências frequentes?</button></dt>
+              <dd id="pergunta3" class="paragraph">No internet banking, vá para a seção de "Transferências" e escolha a opção "Cadastrar Favorecido". Preencha os detalhes da conta e salve para facilitar transferências futuras de maneira rápida e segura.</dd>
             </div>
-            <div class="app-topicos-txt" data-anime="right">
-              <img src="./img/icones/taxas.svg" alt="icone de taxas" />
-              <h3 class="font-1-sb">Sem taxas</h3>
-              <p class="font-1-xs">
-                Acompanhar sua conta, fazer transferências e pagamentos de
-                onde você estiver.
-              </p>
+            <div data-anime="up">
+              <dt><button class="paragraph cor-p4" aria-controls="pergunta4" aria-expanded="false">Quais medidas de segurança o banco adota para proteger minhas transações online?</button></dt>
+              <dd id="pergunta4" class="paragraph">Nosso banco utiliza tecnologias avançadas de criptografia e autenticação para garantir a segurança das suas transações online. Além disso, recomendamos o uso de senhas fortes, atualização regular de dispositivos e a não compartilhar informações confidenciais. Para mais detalhes, consulte nossa página de segurança</dd>
             </div>
-          </div>
+            <div data-anime="up">
+              <dt><button class="paragraph cor-p4" aria-controls="pergunta5" aria-expanded="false"> Como faço para ativar as notificações de transações no aplicativo?</button></dt>
+              <dd id="pergunta5" class="paragraph">No menu de configurações do aplicativo, você geralmente encontrará a opção de ativar notificações. Basta habilitar essa função para receber alertas sobre transações realizadas na sua conta.</dd>
+            </div>
+            <div data-anime="up">
+              <dt><button class="paragraph cor-p4" aria-controls="pergunta6" aria-expanded="false"> É possível realizar transferências pelo aplicativo?</button></dt>
+              <dd id="pergunta6" class="paragraph"> Sim, a maioria dos aplicativos bancários permite que você faça transferências entre contas, tanto para contas do mesmo banco quanto para contas de outras instituições.</dd>
+            </div>
+          </dl>
         </div>
-      </section>
-    </article>
-    <article class="creditos-bg">
-      <section class="creditos container">
-        <div class="creditos-destaque" data-anime="up">
-          <h2 class="titulo-2">Faça mais com seu cartão de crédito</h2>
-          <img src="./img/img-destaque/pessoa-bancaria.png" alt="imagem de pessoa" />
-        </div>
-        <div class="creditos-conteudo">
-          <div data-anime="up">
-            <h3 class="font-1-mb">Pix no crédito</h3>
-            <p class="font-1-s">
-              Faça pagamentos PIX utilizando seu cartão de crédito. Parcele e
-              aproveite essa vantagem.
-            </p>
-          </div>
-          <div data-anime="up">
-            <h3 class="font-1-mb">
-              Pagamento de Boleto com cartão de crédito
-            </h3>
-            <p class="font-1-s">
-              Pague seus boletos no crédito e parcele em até 12 vezes.
-            </p>
-          </div>
-          <div data-anime="up">
-            <h3 class="font-1-mb">Parcelamento de Compras</h3>
-            <p class="font-1-s">
-              Comprou e a loja não parcelou? O Ocean Bank parcela a compra
-              para você! Simples e prático, direto na sua fatura.
-            </p>
-          </div>
-        </div>
-      </section>
-    </article>
-    <article>
-      <section class="container vantagens">
-        <h2 class="font-1-xlb">Entenda nossas vantagens</h2>
-        <div class="vantagens-item-left" data-anime="left">
-          <img src="./img/img-destaque/criptomoedas.png" alt="imagem criptomoedas">
+      </article>
+    </section>
+
+    <section class="security-bg">
+      <article class="container">
+        <div class="security">
           <div>
-            <h3 class="font-1-lb">Maximize Seus Ganhos</h3>
-            <p class="font-1-s">Maximize seus ganhos explorando o potencial das criptomoedas conosco! Oferecemos diversidade de opções, conexão a projetos inovadores e suporte especializado para uma experiência acessível e lucrativa. Escolha-nos para embarcar em uma jornada financeira emocionante.</p>
+            <img src="./src/assets/images/desktop/highlights/seguro.png" alt="">
           </div>
-        </div>
-        <div class="vantagens-item-right" data-anime="right">
-          <img src="./img/img-destaque/noticias.png" alt="imagem noticias">
+          <div class="security-text">
+            <h1 class="subtitle">Contrate um seguro residencial para sua casa</h1>
+            <p class="paragraph">A atualização do aplicativo bancário Sight abordou muitas das questões levantadas no relatório, ressaltando como ele tornou o celular uma prioridade máxima. Sua jornada é perfeita, segura e protegida. Não há necessidade de inserir detalhes do cartão. Você pode pagar on-line.</p>
+            <a href="#">
+              <button class="btn-global">Contrate já</button>
+            </a>
+          </div>
           <div>
-            <h3 class="font-1-lb">Desvendando o Cenário Financeiro: Insights e Tendências para Potencializar seus Investimentos</h3>
-            <p class="font-1-s">Potencialize seus investimentos com insights do mercado financeiro. Oferecemos análises atuais e tendências para embasar suas decisões, permitindo que esteja sempre um passo à frente nas suas estratégias.</p>
+            <img src="./src/assets/images/desktop/highlights/familia.png" alt="">
           </div>
         </div>
-        <div class="vantagens-item-left" data-anime="left">
-          <img src="./img/img-destaque/equipe.png" alt="imagem equipe">
-          <div>
-            <h3 class="font-1-lb">Equipe Experiente: Orientando seus Investimentos com Confiança e Precisão.</h3>
-            <p class="font-1-s">Nossa equipe experiente está comprometida em guiar seus investimentos com confiança e precisão. Conte conosco para proporcionar uma orientação sólida e qualificada em suas decisões financeiras.</p>
-          </div>
-        </div>
-        <div class="vantagens-item-right" data-anime="right">
-          <img src="./img/img-destaque/graficos.png" alt="imagem graficos">
-          <div>
-            <h3 class="font-1-lb">Desbravando o Mundo Financeiro: Estratégias e Oportunidades para o Seu Sucesso</h3>
-            <p class="font-1-s">Com estratégias personalizadas e suporte contínuo, estamos comprometidos em guiar você rumo ao sucesso financeiro, fornecendo as ferramentas essenciais para decisões informadas e resultados sólidos.</p>
-          </div>
-        </div>
-      </section>
-    </article>
-    <article class="perguntas-bg">
-      <div class="perguntas container">
-        <h4 class="font-1-xl">perguntas frequentes</h4>
-        <dl>
-          <div data-anime="up">
-            <dt><button class="font-1-sb cor-p4" aria-controls="pergunta1" aria-expanded="true">Como posso recuperar minha senha de acesso ao internet banking?</button></dt>
-            <dd id="pergunta1" class="font-1-s ativo">Para recuperar sua senha, clique em "Esqueci minha senha" na página de login. Você receberá instruções por e-mail ou SMS para redefinir sua senha com segurança.</dd>
-          </div>
-          <div data-anime="up">
-            <dt><button class="font-1-sb cor-p4" aria-controls="pergunta2" aria-expanded="false">Qual é o limite diário para transferências online?</button></dt>
-            <dd id="pergunta2" class="font-1-s">O limite diário para transferências online varia conforme o tipo de conta. Consulte a seção de limites no internet banking ou entre em contato com nosso suporte para obter informações específicas sobre sua conta.</dd>
-          </div>
-          <div data-anime="up">
-            <dt><button class="font-1-sb cor-p4" aria-controls="pergunta3" aria-expanded="false">Como posso cadastrar contas de favorecidos para transferências frequentes?</button></dt>
-            <dd id="pergunta3" class="font-1-s">No internet banking, vá para a seção de "Transferências" e escolha a opção "Cadastrar Favorecido". Preencha os detalhes da conta e salve para facilitar transferências futuras de maneira rápida e segura.</dd>
-          </div>
-          <div data-anime="up">
-            <dt><button class="font-1-sb cor-p4" aria-controls="pergunta4" aria-expanded="false">Quais medidas de segurança o banco adota para proteger minhas transações online?</button></dt>
-            <dd id="pergunta4" class="font-1-s">Nosso banco utiliza tecnologias avançadas de criptografia e autenticação para garantir a segurança das suas transações online. Além disso, recomendamos o uso de senhas fortes, atualização regular de dispositivos e a não compartilhar informações confidenciais. Para mais detalhes, consulte nossa página de segurança</dd>
-          </div>
-          <div data-anime="up">
-            <dt><button class="font-1-sb cor-p4" aria-controls="pergunta5" aria-expanded="false"> Como faço para ativar as notificações de transações no aplicativo?</button></dt>
-            <dd id="pergunta5" class="font-1-s">No menu de configurações do aplicativo, você geralmente encontrará a opção de ativar notificações. Basta habilitar essa função para receber alertas sobre transações realizadas na sua conta.</dd>
-          </div>
-          <div data-anime="up">
-            <dt><button class="font-1-sb cor-p4" aria-controls="pergunta6" aria-expanded="false"> É possível realizar transferências pelo aplicativo?</button></dt>
-            <dd id="pergunta6" class="font-1-s"> Sim, a maioria dos aplicativos bancários permite que você faça transferências entre contas, tanto para contas do mesmo banco quanto para contas de outras instituições.</dd>
-          </div>
-        </dl>
-      </div>
-    </article>
-    <aside class="contato-bg">
-      <section class="contato container">
-        <span class="span-txt1">banco de pagamentos</span>
-        <h1 class="font-1-xlb">
-          Descubra como o investimento é feito para você
-        </h1>
-        <p class="font-1-xs">
-          Aqui você investe de um jeito simples, rápido e descomplicado, além
-          de você diversificar sua carteira e chegar aonde quiser.
-        </p>
-        <a href="#"><button class="btn-global">Junte-se a nós</button></a>
-      </section>
-    </aside>
+      </article>
+    </section>
   </main>
-  <footer id="contato" class="footer-bg" data-anime="up">
-    <section class="container footer">
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">política de privacidade e segurança</h4>
-        <p>"Protegemos suas informações com rigorosas medidas de segurança e respeitamos sua privacidade."</p>
-      </div>
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">Termos de Uso</h4>
-        <p>"Confira nossos termos para orientação sobre o uso responsável dos nossos serviços."</p>
-      </div>
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">Contato</h4>
-        <p>"Precisa de ajuda? Entre em contato conosco. Estamos aqui para ajudar."</p>
-      </div>
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">FAQ (Perguntas Frequentes)</h4>
-        <p>"Encontre respostas para perguntas comuns sobre nossos serviços e políticas."</p>
-      </div>
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">Sobre o Ocean Bank</h4>
-        <p>"Conheça nossa história e compromisso em oferecer serviços financeiros confiáveis."</p>
-      </div>
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">Blog ou Recursos Educacionais</h4>
-        <p>"Explore nosso blog para dicas financeiras e recursos educacionais úteis."</p>
-      </div>
-      <div class="footer-itens">
-        <h4 class="subtitulo-footer-itens">Redes Sociais e Parceiros</h4>
-        <p>"Conecte-se conosco nas redes sociais e descubra nossos parceiros estratégicos."</p>
-      </div>
-      <div class="footer-itens-sm">
-        <img src="./img/logotipo/logotipo-2.svg" alt="logotipo-2">
-        <div>
-          <label for="email"></label>
-          <input type="text" id="email" class="input-footer">
-          <input type="button" value="enviar" class="input-btn-footer">
-        </div>
-        <div>
-          <ul class="footer-redes-sociais">
-            <li><img src="./img/redes-sociais/instagram.svg" alt="icone instagram"></li>
-            <li><img src="./img/redes-sociais/facebook.svg" alt="icone facebook"></li>
-            <li><img src="./img/redes-sociais/twitter.svg" alt="icone twitter"></li>
-            <li><img src="./img/redes-sociais/youtube.svg" alt="icone youtube"></li>
-          </ul>
-        </div>
+
+  <footer>
+    <section class="container">
+      <div class="footer">
+        <article class="footer-content">
+          <div class="footer-logo">
+            <img src="./src/assets/images/desktop/icons/logos/logo-secundary.svg" alt=""></div>
+            <div class="footer-list links">
+                <ul>
+                  <li>
+                    <a href="#">home</a>
+                  </li>
+                  <li>
+                    <a href="#">sobre nós</a>
+                  </li>
+                  <li>
+                    <a href="#">contato</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#">aplicativo mobile</a>
+                  </li>
+                  <li>
+                    <a href="#">serviços</a>
+                  </li>
+                  <li>
+                    <a href="#">vantagens</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="footer-input">
+              <p class="paragraph">SEJA O PRIMEIRO A OUVIR NOSSAS NOTICIAS SOBRE SERVIÇOS BANCÁRIOS À VISTA</p>
+              <div>
+                <label for="e-mail">email</label>
+                <input type="email">
+              </div>
+            </div>
+        </article>
+
+        <article class="footer-content">
+          <div>
+            <h1 class="subtitle">Mantenha-se conectado com qualquer pessoa e em qualquer lugar</h1>
+          </div>
+          <div class="redes-sociais">
+            <p class="paragraph">Nossas redes sociais</p>
+            <ul>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-behance"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-dribbble"></i></li>
+            </ul>
+          </div>
+
+          <div class="footer-buttons">
+            <a href="#"><button><span><i class="fa-brands fa-apple"></i></span>app store</button></a>
+            <a href="#"><button><span><i class="fa-brands fa-google-play"></i></span>play store</button></a>
+          </div>
+        </article>
       </div>
     </section>
+    <div class="footer-bg">
+      <div class="container">
+        <div class="footer-content">
+          <p class="paragraph">2025 Lucas Gonçalves. Todos os direitos reservados</p>
+          <div>
+            <span>Política de privacidade</span>
+            <span>Termos de serviço</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script type="module" src="js/script.js"></script>
+  <script type="module" src="src/js/global.js"></script>
 </body>
+
 </html>

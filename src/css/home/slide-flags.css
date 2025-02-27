@@ -1,0 +1,54 @@
+.flags-bg{
+  background-color: #18325E;
+}
+.flags{
+  overflow: hidden;
+  padding: 5px;
+  white-space: nowrap;
+  position: relative;
+  padding: 40px;
+}
+.flags:before,
+.flags:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.flags:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #18325E );
+}
+.flags:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0),  #18325E);
+}
+.flags img{
+  display: initial;
+  width: 150px;
+  height: 35px;
+  margin: 0 40px
+}
+.flags:hover .flags-slide {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+.flags-slide {
+  display: inline-block;
+  animation: 24s slide infinite linear;
+}
+@media(max-width:600px){
+  .flags img{
+    margin: 0 20px;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,25 @@
+.security-bg{
+  background: linear-gradient(to right, #172D52 0%,#1F55B2 50%, #3F98E1 100%);
+}
+.security{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  gap: 40px;
+  padding: 100px 0px;
+}
+.security-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+  color: #FFFFFF;
+}
+@media(max-width:1000px){
+  .security{
+    grid-template-columns: 1fr;
+  }
+  .security-text{
+    grid-row: 1;
+  }
+}
