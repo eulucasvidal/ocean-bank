@@ -1,19 +1,24 @@
 .title{
-  font: 500 5rem/1 "Inter", serif;
-  text-transform: uppercase;
+  font: 700 3.75rem/1 "Montserrat", sans-serif;
+  max-width: 20ch;
+}
+.title > span{
+  color: #49ABFF;
 }
 .subtitle{
-  font: 500 2.7rem/1 "Inter", serif;
-  text-transform: capitalize;
+  font: 600 2.5rem/1.1 "Montserrat", sans-serif;
+  max-width: 20ch;
 }
-.links{
-  font: 600 0.875rem/1 "Inter", serif;
+.subtitle > span{
+  color: #49ABFF;
+}
+.links-menu{
+  font: 400 1.125rem/1 "Source Sans 3", sans-serif;
   text-transform: uppercase;
 }
-.span-title{
-  font: 500 1rem/1.2 "Inter", serif;
+.text-detail{
+  font: 600 1rem/1.2 "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: var(--cor-p1);
   width: max-content;
   background-image: var(--gradient);
   background-clip: text;
@@ -21,9 +26,10 @@
   color: transparent;
 }
 .span-text{
-  font: 500 1rem/1.2 "Inter", serif;
+  font: 500 1rem/1.2 "Source Sans 3", sans-serif;
   text-transform: capitalize;
 }
 .paragraph{
-  font: 300 1rem/1.1 "Inter", serif;
+  font: 400 1.25rem/1.1 "Source Sans 3", sans-serif;
+  max-width: 65ch;
 }

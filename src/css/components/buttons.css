@@ -1,21 +1,29 @@
-.btn-global {
-  padding:15px 20px;
+/* Config BTN GLOBAL */
+.btn-config{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   text-transform: uppercase;
-  border: none;
   border-radius: 5px;
-  color: var(--cor-p1);
+  color: #FEFEFE;
   z-index: 1;
-  background: var(--cor-2);
   position: relative;
   transition: all 250ms;
   overflow: hidden;
   font: 600 0.875rem/1.2 'Inter', sans-serif;
   letter-spacing: 1px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   width: max-content;
 }
-.btn-global::before {
+/* Config BTN PRIMARIO FUNDO AZUL GRADIENTE */
+.btn-primary{
+  padding: 15px 20px;
+  background: var(--cor-2);
+}
+.btn-primary::before {
   content: "";
   position: absolute;
   top: 0;
@@ -27,44 +35,43 @@
   z-index: -1;
   transition: all 250ms;
 }
-.btn-global:hover{
+.btn-primary:hover{
     border-color: var(--cor-1);
 }
-.btn-global:hover::before {
+.btn-primary:hover::before {
   width: 100%;
 }
-.button{
+/* Config BTN SECUNDARIO FUNDO AZUL E HOVER BEGE */
+.btn-secundary{
   padding: 20px 60px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 10px;
-  color: var(--cor-p1);
-  z-index: 1;
-  background-color: #947C3B;
-  position: relative;
-  transition: all 250ms;
-  overflow: hidden;
-  font: 600 0.875rem/1.2 'Inter', sans-serif;
-  letter-spacing: 1px;
+  background-color: #173058;
   border: 1px solid #ffffff;
-  cursor: pointer;
-  width: max-content;
 }
-.button::before {
+.btn-secundary::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
-  border-radius: 10px;
+  border-radius: 5px;
   background: linear-gradient(to right, #E1A90D 0%, #947C3B 100%);
   z-index: -1;
   transition: all 250ms;
 }
-.button:hover{
+.btn-secundary:hover{
     border-color: #947C3B;
 }
-.button:hover::before {
+.btn-secundary:hover::before {
   width: 100%;
+}
+/* Config BTN APP */
+.btn-app{
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
+.btn-app i{
+  color: #000000;
 }

@@ -1,19 +1,12 @@
 i{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: .4s;
-}
-.fa-circle-check{
-  color: #3E97E0;
-}
-.fa-money-bills{
-  color: #509963;
-}
-.fa-chart-pie{
   color: #398BCE;
 }
-.fa-credit-card{
-  color: #B48F28;
+.fa-arrow-right,
+.fa-download{
+  color: #FFFFFF;
 }
 .fa-facebook-f,
 .fa-behance,
@@ -21,10 +14,8 @@ i{
 .fa-instagram,
 .fa-dribbble
 {
-  text-align: center;
   border-radius: 50%;
   padding: 15px;
-  color: #0866FF;
 }
 .fa-facebook-f:hover,
 .fa-behance:hover,

@@ -4,9 +4,8 @@
 .app {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  align-items: center;
   gap: 50px;
-  padding: 100px 0px;
 }
 .app img{
   max-width: 450px;
@@ -20,8 +19,8 @@
 }
 .app-list{
   display: flex;
+  flex-direction: row; 
   gap: 100px;
-  width: 100%;
 }
 .app-list ul{
   display: flex;
@@ -45,4 +44,9 @@
     grid-row: 1;
   }
 }
-
+@media(max-width:500px){
+  .app-list{
+    flex-direction: column;
+    gap: 30px;
+  }
+}

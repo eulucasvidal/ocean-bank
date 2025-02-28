@@ -13,6 +13,9 @@
 .header-nav{
   justify-content: center;
 }
+.header-nav .links-menu{
+  color: #FFFFFF;
+}
 @media (max-width: 1000px) {
   .header {
     display: flex;

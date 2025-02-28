@@ -5,12 +5,10 @@
   text-transform: capitalize;
   margin-bottom: 40px;
 }
-
 .perguntas dl > div{
   padding: 20px;
   border-radius: 4px;
 }
-
 .perguntas dl > div:nth-child(odd){
   background-color: #D1E6FF;
 }
