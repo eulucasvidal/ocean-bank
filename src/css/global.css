@@ -7,13 +7,11 @@
 @import './layouts/header.css';
 @import './layouts/footer.css';
 /* Config dos Components */
-@import'./components/animate-scroll.css';
 @import'./components/buttons.css';
 @import'./components/container.css';
 @import'./components/mobile-menu.css';
-@import'./components/span-txt.css';
-@import'./components/titles.css';
 @import'./components/details.css';
+@import'./components/input.css';
 /* Config da Home */
 @import'./home/intro.css';
 @import'./home/app.css';

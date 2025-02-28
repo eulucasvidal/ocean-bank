@@ -8,7 +8,7 @@ export default function initPerguntas(){
 
     resposta.classList.toggle('ativo');
     const ativa = resposta.classList.contains("ativo")
-    pergunta.setAttribute("aria-expanded", "true");
+    pergunta.setAttribute("aria-expanded", "false");
   }
 
   function eventosPerguntas(pergunta){

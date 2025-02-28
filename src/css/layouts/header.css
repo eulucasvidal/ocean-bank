@@ -22,6 +22,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  .header-nav{
+    gap: 10px;
+  }
   .header-container {
     width: auto;
     gap: 10px;

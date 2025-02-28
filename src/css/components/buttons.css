@@ -71,7 +71,15 @@
   border: 1px solid #000000;
   background-color: transparent;
   color: #000000;
+  transition: .4s;
 }
 .btn-app i{
   color: #000000;
+}
+.btn-app:hover{
+  color: #FEFEFE;
+  background-color: #000000;
+}
+.btn-app:hover i{
+  color: #FEFEFE;
 }
