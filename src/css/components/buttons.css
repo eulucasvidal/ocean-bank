@@ -66,20 +66,26 @@
   width: 100%;
 }
 /* Config BTN APP */
-.btn-app{
+.btn-app-store{
   padding: 10px 20px;
   border: 1px solid #000000;
   background-color: transparent;
   color: #000000;
   transition: .4s;
 }
-.btn-app i{
+.btn-app-store i{
   color: #000000;
 }
-.btn-app:hover{
+.btn-app-store:hover{
   color: #FEFEFE;
   background-color: #000000;
 }
-.btn-app:hover i{
+.btn-app-store:hover i{
   color: #FEFEFE;
+}
+.btn-config:hover i{
+  transform: translate(5px);
+}
+.btn-config:hover .fa-download{
+  transform: translateY(5px);
 }

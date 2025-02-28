@@ -16,6 +16,9 @@
 .header-nav .links-menu{
   color: #FFFFFF;
 }
+.header .links-menu li a:hover{
+  border-color: #FFFFFF;
+}
 @media (max-width: 1000px) {
   .header {
     display: flex;

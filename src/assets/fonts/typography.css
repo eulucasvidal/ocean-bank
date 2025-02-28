@@ -16,6 +16,12 @@
   font: 400 1.125rem/1 "Source Sans 3", sans-serif;
   text-transform: uppercase;
 }
+.links-menu li a{
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 3px;
+  transition: .4s;
+}
 .text-detail{
   font: 600 1rem/1.2 "Montserrat", sans-serif;
   text-transform: uppercase;
