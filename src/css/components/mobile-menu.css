@@ -4,7 +4,7 @@
   cursor: pointer;
   border: none;
   background: none;
-  color: var(--cor-dark-blue);
+  color: #2993EA;
 }
 .menu-mobile-button{
   display: flex;
