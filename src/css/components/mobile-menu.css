@@ -14,7 +14,7 @@
 .menu-mobile-button img{
   display: none;
 }
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .menu-mobile-button img{
     display: block;
   }

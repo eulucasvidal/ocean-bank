@@ -16,7 +16,7 @@
   gap: 40px;
   color: var(--cor-white);
 }
-@media(max-width:1000px){
+@media(max-width:1100px){
   .security{
     grid-template-columns: 1fr;
   }
