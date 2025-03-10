@@ -34,8 +34,8 @@
   text-transform: uppercase;
   width: max-content;
   background-image: var(--gradient);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 /* Span Style */
