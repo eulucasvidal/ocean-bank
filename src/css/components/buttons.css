@@ -6,7 +6,7 @@
   gap: 10px;
   text-transform: uppercase;
   border-radius: 5px;
-  color: #FEFEFE;
+  color: var(--cor-white);
   z-index: 1;
   position: relative;
   transition: all 250ms;
@@ -21,7 +21,7 @@
 /* Config BTN PRIMARIO FUNDO AZUL GRADIENTE */
 .btn-primary{
   padding: 15px 20px;
-  background: var(--cor-2);
+  background-color: #174B9F;
 }
 .btn-primary::before {
   content: "";
@@ -36,7 +36,7 @@
   transition: all 250ms;
 }
 .btn-primary:hover{
-    border-color: var(--cor-1);
+    border-color: #3F98E1;
 }
 .btn-primary:hover::before {
   width: 100%;
@@ -45,7 +45,7 @@
 .btn-secundary{
   padding: 20px 60px;
   background-color: #173058;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--cor-white);
 }
 .btn-secundary::before {
   content: "";
@@ -68,20 +68,20 @@
 /* Config BTN APP */
 .btn-app-store{
   padding: 10px 20px;
-  border: 1px solid #000000;
+  border: 1px solid var(--cor-black);
   background-color: transparent;
-  color: #000000;
+  color: var(--cor-black);
   transition: .4s;
 }
 .btn-app-store i{
-  color: #000000;
+  color: var(--cor-black);
 }
 .btn-app-store:hover{
-  color: #FEFEFE;
-  background-color: #000000;
+  color: var(--cor-white);
+  background-color: var(--cor-black);
 }
 .btn-app-store:hover i{
-  color: #FEFEFE;
+  color: var(--cor-white);
 }
 .btn-config:hover i{
   transform: translate(5px);

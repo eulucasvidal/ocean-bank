@@ -1,5 +1,5 @@
 .perguntas-bg{
-  background: var(--cor-4);
+  background: #F6FAFF;
 }
 .perguntas h4{
   text-transform: capitalize;
@@ -28,7 +28,7 @@
   display: inline-block;
   width: 12px;
   height: 8px;
-  background-color: var(--cor-1);
+  background-color:#49ABFF;
 }
 
 .perguntas button::after{

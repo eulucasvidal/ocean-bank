@@ -6,7 +6,7 @@ i{
 }
 .fa-arrow-right,
 .fa-download{
-  color: #FFFFFF;
+  color: var(--cor-white);
 }
 .fa-facebook-f,
 .fa-behance,
@@ -21,11 +21,11 @@ i{
 .fa-behance:hover,
 .fa-linkedin-in:hover{
   background-color: #0866FF;
-  color: #FFFFFF;
+  color: var(--cor-white);
 }
 .fa-instagram:hover{
   background: linear-gradient(to right, #5C5BA5 0%,#CA3F74 50%, #FABD5A 100%);
-  color: #FFFFFF;
+  color: var(--cor-white);
 }
 .fa-dribbble:hover{
   background-color: #FFAAE7;
