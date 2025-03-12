@@ -7,6 +7,7 @@
 @import './layouts/header.css';
 @import './layouts/footer.css';
 /* Config dos Components */
+@import'./components/animate.css';
 @import'./components/buttons.css';
 @import'./components/container.css';
 @import'./components/mobile-menu.css';

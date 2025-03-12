@@ -18,7 +18,7 @@
 }
 /* Subtitulo Style Span */
 .links-menu{
-  font: 400 1.125rem/1 "Source Sans 3", sans-serif;
+  font: 400 1rem/1 "Source Sans 3", sans-serif;
   text-transform: uppercase;
 }
 /* Subtitulo Style Span */
@@ -33,7 +33,7 @@
   font: 600 1rem/1.2 "Montserrat", sans-serif;
   text-transform: uppercase;
   width: max-content;
-  background-image: var(--gradient);
+  background-image: var(--gradient-1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

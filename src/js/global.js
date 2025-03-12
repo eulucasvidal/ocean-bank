@@ -4,5 +4,9 @@ initToggleMenu();
 import initPerguntas from "./modules/perguntas.js";
 initPerguntas();
 
-import initScrollSections from "./modules/scroll-sections.js";
-initScrollSections();
+import initScrollSuave from "./modules/scroll-suave.js";
+initScrollSuave();
+
+if (window.SimpleAnime){
+  new SimpleAnime();
+}
