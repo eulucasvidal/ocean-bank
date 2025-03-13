@@ -1,26 +1,27 @@
-/*
-6 CSS personalizado dependendo da animação desejada
-Devem ser adicionadas na frente do código essencial do item 7.
-*/
-.js .fadeInDown {
-  transform: translate3d(0, -20px, 0);
-}
-.js .fadeInUp {
-  transform: translate3d(0, 20px, 0);
-}
-.js .fadeInRight {
-  transform: translate3d(20px, 0, 0);
-}
-.js .fadeInLeft {
-  transform: translate3d(-20px, 0, 0);
-}
-
-/* 7 Adicione o CSS Essencial abaixo */
-.js [data-anime] {
+.js [data-anime="itens"]{
   opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-50%);
+  transition: all 1.8s;
 }
-.js .anime {
+.js .show{
   opacity: 1;
-  transform: none;
-  transition: transform 0.8s, opacity 0.8s;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 1.8s;
+}
+.js .animar:nth-child(2){
+  transition-delay: 400ms;
+}
+.js .animar:nth-child(3){
+  transition-delay: 700ms;
+}
+.js .animar:nth-child(4){
+  transition-delay: 1000ms;
+}
+.js .animar:nth-child(5){
+  transition-delay: 1300ms;
+}
+.js .animar:nth-child(6){
+  transition-delay: 1600ms;
 }

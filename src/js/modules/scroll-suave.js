@@ -14,5 +14,4 @@ export default function initScrollSuave(){
   linksInternos.forEach((links)=>{[
     links.addEventListener("click", scrollSuave)
   ]})
-
 }

@@ -7,6 +7,5 @@ initPerguntas();
 import initScrollSuave from "./modules/scroll-suave.js";
 initScrollSuave();
 
-if (window.SimpleAnime){
-  new SimpleAnime();
-}
+import initAnimaScroll from "./modules/anime-scroll.js";
+initAnimaScroll();
