@@ -28,6 +28,7 @@
 <h2 id="started">📌 Sobre</h2>
 
 Este projeto é uma landing page para "Ocean Bank", um site financeiro fictício. Desenvolvida com HTML, CSS e JavaScript, a página foi recentemente redesenhada para aplicar novos conhecimentos e boas práticas. O objetivo era criar uma experiência intuitiva e visualmente atraente, com efeitos básicos para enriquecer o design. A landing page reflete simplicidade e funcionalidade, ideal para um ambiente financeiro online.
+
 [![project][PROJECT__BADGE]][PROJECT__URL]
 
 <h2 id="started">🚀 Como iniciar projeto</h2>
